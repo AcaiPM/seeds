@@ -1,0 +1,25 @@
+{
+    "name": "acai-seeds",
+    "version": "1.0.0",
+    "description": "Seeds for Acai",
+    "main": "index.ts",
+    "scripts": {
+        "start": "ts-node index.ts",
+        "dev": "nodemon index.ts"
+    },
+    "keywords": [],
+    "author": "Nebula",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "fastify": "^4.13.0",
+        "node-cache": "^5.1.2"
+    },
+    "devDependencies": {
+        "@types/node": "^18.14.0",
+        "nodemon": "^2.0.22",
+        "ts-node": "^10.9.1",
+        "tslib": "^2.5.0",
+        "typescript": "^4.9.5"
+    }
+}
