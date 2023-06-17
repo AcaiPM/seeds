@@ -1,0 +1,25 @@
+{
+    "name": "Etcher",
+    "description": "Tool to flash OS images to SD cards & USB drives",
+    "homepage": "https://balena.io/etcher",
+    "app_name": "balenaEtcher.app",
+    "app_version": "1.18.4",
+    "min_os": "10.13",
+    "downloads": {
+        "arm64": "https://github.com/balena-io/etcher/releases/download/v#{version}/balenaEtcher-#{version}.dmg",
+        "amd64": "https://github.com/balena-io/etcher/releases/download/v#{version}/balenaEtcher-#{version}.dmg",
+        "universal": "https://github.com/balena-io/etcher/releases/download/v#{version}/balenaEtcher-#{version}.dmg"
+    },
+    "uninstall": {
+        "files": [
+            "~/Library/Preferences/io.balena.etcher.helper.plist",
+            "~/Library/Preferences/io.balena.etcher.plist",
+            "~/Library/Saved Application State/io.balena.etcher.savedState"
+        ],
+        "directories": [
+            "~/Library/Application Support/balena-etcher"
+        ],
+        "launchctl": [],
+        "other": []
+    }
+}
