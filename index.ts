@@ -64,10 +64,17 @@ app.get("/seed", (req: any, res: any) => {
 app.get("/search", (req: any, res: any) => {
     const id = req.query.id;
 
-    const seeds = fs.readdirSync('./seeds', { withFileTypes: true })
-        .filter(dirent => dirent.isFile() && dirent.name.endsWith('.json') && dirent.name.replace('.json', '').toLowerCase().includes(id.toLowerCase()))
-        .map(dirent => dirent.name.replace('.json', ''));
-    res.code(200).send({ seeds });
+    if (id) {
+        const seeds = fs.readdirSync('./seeds', { withFileTypes: true })
+            .filter(dirent => dirent.isFile() && dirent.name.endsWith('.json') && dirent.name.replace('.json', '').toLowerCase().includes(id.toLowerCase()))
+            .map(dirent => dirent.name.replace('.json', ''));
+        res.code(200).send({ seeds });
+    } else {
+        const seeds = fs.readdirSync('./seeds', { withFileTypes: true })
+            .filter(dirent => dirent.isFile() && dirent.name.endsWith('.json'))
+            .map(dirent => dirent.name.replace('.json', ''));
+        res.code(200).send({ seeds });
+    }
 });
 
 app.listen({ port: 3000, host: "0.0.0.0" }, (err, address) => {
