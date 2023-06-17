@@ -7,8 +7,7 @@
     "min_os": "10.13",
     "downloads": {
         "arm64": "https://github.com/JannisX11/blockbench/releases/download/v#{version}/Blockbench_arm64_#{version}.dmg",
-        "amd64": "https://github.com/JannisX11/blockbench/releases/download/v#{version}/Blockbench_x64_#{version}.dmg",
-        "universal": ""
+        "amd64": "https://github.com/JannisX11/blockbench/releases/download/v#{version}/Blockbench_x64_#{version}.dmg"
     },
     "uninstall": {
         "files": [

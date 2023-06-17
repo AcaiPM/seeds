@@ -33,7 +33,6 @@ interface Seed {
 interface Downloads {
     arm64: string;
     amd64: string;
-    universal: string;
 }
 
 interface Uninstall {

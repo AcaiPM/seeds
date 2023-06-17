@@ -7,8 +7,7 @@
     "min_os": "10.13",
     "downloads": {
         "arm64": "https://github.com/balena-io/etcher/releases/download/v#{version}/balenaEtcher-#{version}.dmg",
-        "amd64": "https://github.com/balena-io/etcher/releases/download/v#{version}/balenaEtcher-#{version}.dmg",
-        "universal": "https://github.com/balena-io/etcher/releases/download/v#{version}/balenaEtcher-#{version}.dmg"
+        "amd64": "https://github.com/balena-io/etcher/releases/download/v#{version}/balenaEtcher-#{version}.dmg"
     },
     "uninstall": {
         "files": [
