@@ -5,6 +5,7 @@
     "app_name": "balenaEtcher.app",
     "app_version": "1.18.4",
     "min_os": "10.13",
+    "file_type": "dmg",
     "downloads": {
         "arm64": "https://github.com/balena-io/etcher/releases/download/v#{version}/balenaEtcher-#{version}.dmg",
         "amd64": "https://github.com/balena-io/etcher/releases/download/v#{version}/balenaEtcher-#{version}.dmg"

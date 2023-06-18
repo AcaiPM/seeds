@@ -26,6 +26,7 @@ interface Seed {
     app_name: string;
     app_version: string;
     min_os: string;
+    file_type: string;
     downloads: Downloads;
     uninstall: Uninstall;
 }

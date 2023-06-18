@@ -5,6 +5,7 @@
     "app_name": "Blockbench.app",
     "app_version": "4.7.4",
     "min_os": "10.13",
+    "file_type": "dmg",
     "downloads": {
         "arm64": "https://github.com/JannisX11/blockbench/releases/download/v#{version}/Blockbench_arm64_#{version}.dmg",
         "amd64": "https://github.com/JannisX11/blockbench/releases/download/v#{version}/Blockbench_x64_#{version}.dmg"
