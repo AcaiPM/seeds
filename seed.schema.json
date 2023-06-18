@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id": "https://raw.githubusercontent.com/AcaiPM/seeds/main/seed.schema.json",
+    "title": "Acai Seed",
+    "description": "Schema used for all Acai seeds.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "homepage": {
+            "type": "string"
+        },
+        "app_name": {
+            "type": "string"
+        },
+        "app_version": {
+            "type": "string"
+        },
+        "min_os": {
+            "type": "string"
+        },
+        "file_type": {
+            "type": "string"
+        },
+        "downloads": {
+            "type": "object",
+            "properties": {
+                "arm64": {
+                    "type": "string"
+                },
+                "amd64": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "arm64",
+                "amd64"
+            ]
+        },
+        "uninstall": {
+            "type": "object",
+            "properties": {
+                "files": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "directories": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "launchctl": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "other": {
+                    "type": "array",
+                    "items": {}
+                }
+            },
+            "required": [
+                "files",
+                "directories",
+                "launchctl",
+                "other"
+            ]
+        }
+    },
+    "required": [
+        "name",
+        "description",
+        "homepage",
+        "app_name",
+        "app_version",
+        "min_os",
+        "file_type",
+        "downloads",
+        "uninstall"
+    ]
+}

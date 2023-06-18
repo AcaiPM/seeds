@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/AcaiPM/seeds/main/seed.schema.json",
     "name": "Blockbench",
     "description": "3D model editor for boxy models and pixel art textures",
     "homepage": "https://blockbench.net",

@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/AcaiPM/seeds/main/seed.schema.json",
     "name": "Etcher",
     "description": "Tool to flash OS images to SD cards & USB drives",
     "homepage": "https://balena.io/etcher",
